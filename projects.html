@@ -3,60 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Cybersecurity Portfolio</title>
+    <title>Projects | CyberSec Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
+        <canvas id="matrix" class="header-matrix"></canvas>
         <div class="container">
-            <h1>Your Name</h1>
-            <p>Cybersecurity Professional</p>
+            <h1>SECURITY_PROJECTS</h1>
+            <p>Code | Research | Development</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="labs.html">Labs</a></li>
+                <li><a href="index.html"><i class="fas fa-terminal"></i> Home</a></li>
+                <li><a href="projects.html" class="active"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="labs.html"><i class="fas fa-flask"></i> Labs</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="projects" class="container">
-        <h2>Cybersecurity Projects</h2>
+        <h2>> PROJECT_ARCHIVE</h2>
         
         <div class="project">
-            <h3>Network Vulnerability Scanner</h3>
-            <p class="project-date">January 2023</p>
-            <p>A Python-based tool that scans networks for vulnerabilities and generates detailed reports.</p>
-            <p><strong>Technologies:</strong> Python, Nmap, OpenVAS</p>
-            <a href="https://github.com/yourusername/network-scanner" class="btn" target="_blank">View on GitHub</a>
+            <div class="project-header">
+                <h3>NETWORK_VULN_SCANNER</h3>
+                <span class="project-badge">Python</span>
+                <span class="project-badge">CVE</span>
+            </div>
+            <p class="project-date">2023-Q1</p>
+            <p>> Automated scanner identifying 15+ vulnerability classes across network protocols.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-bug"></i> 27 CVEs detected</span>
+                <span><i class="fas fa-star"></i> 150+ GitHub stars</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-file-alt"></i> Whitepaper</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Source</a>
+            </div>
         </div>
 
         <div class="project">
-            <h3>Custom SIEM Solution</h3>
-            <p class="project-date">October 2022</p>
-            <p>A Security Information and Event Management system built with ELK stack for log analysis.</p>
-            <p><strong>Technologies:</strong> Elasticsearch, Logstash, Kibana, Python</p>
-            <a href="https://github.com/yourusername/custom-siem" class="btn" target="_blank">View on GitHub</a>
-        </div>
-
-        <div class="project">
-            <h3>Phishing Detection Browser Extension</h3>
-            <p class="project-date">July 2022</p>
-            <p>An extension that analyzes websites for phishing indicators and warns users.</p>
-            <p><strong>Technologies:</strong> JavaScript, Machine Learning, Chrome API</p>
-            <a href="https://github.com/yourusername/phishing-detector" class="btn" target="_blank">View on GitHub</a>
+            <div class="project-header">
+                <h3>PHISHING_DETECTOR</h3>
+                <span class="project-badge">ML</span>
+                <span class="project-badge">Chrome</span>
+            </div>
+            <p class="project-date">2022-Q4</p>
+            <p>> Browser extension detecting phishing sites with 98.7% accuracy using ensemble models.</p>
+            <div class="project-stats">
+                <span><i class="fas fa-shield-alt"></i> 5k+ users</span>
+                <span><i class="fas fa-clock"></i> 0.2s analysis</span>
+            </div>
+            <div class="project-links">
+                <a href="#" class="btn"><i class="fas fa-chart-bar"></i> Metrics</a>
+                <a href="#" class="btn"><i class="fab fa-github"></i> Source</a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
+    <script>
+        // Matrix animation (same as index.html)
+    </script>
 </body>
 </html>

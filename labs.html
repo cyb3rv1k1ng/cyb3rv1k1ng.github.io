@@ -3,60 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Labs | Cybersecurity Portfolio</title>
+    <title>Labs | CyberSec Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
+        <canvas id="matrix" class="header-matrix"></canvas>
         <div class="container">
-            <h1>Your Name</h1>
-            <p>Cybersecurity Professional</p>
+            <h1>SECURITY_LABS</h1>
+            <p>Research | Exploits | Writeups</p>
         </div>
     </header>
 
     <nav>
         <div class="container">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="labs.html" class="active">Labs</a></li>
+                <li><a href="index.html"><i class="fas fa-terminal"></i> Home</a></li>
+                <li><a href="projects.html"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="labs.html" class="active"><i class="fas fa-flask"></i> Labs</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="labs" class="container">
-        <h2>Security Labs</h2>
+        <h2>> LAB_REPORTS</h2>
         
         <div class="lab">
-            <h3>Buffer Overflow Exploitation</h3>
-            <p class="lab-date">March 2023</p>
-            <p>Demonstration of stack-based buffer overflow vulnerability exploitation on a vulnerable Windows application.</p>
-            <p><strong>Tools:</strong> Immunity Debugger, Mona, Python</p>
-            <a href="#" class="btn">View Write-up</a>
+            <div class="lab-header">
+                <h3>BUFFER_OVERFLOW_EXPLOIT</h3>
+                <span class="lab-badge">C</span>
+                <span class="lab-badge">x86</span>
+            </div>
+            <p class="lab-date">2023-Q2</p>
+            <p>> Developed ROP chain to bypass ASLR and NX protections on vulnerable service.</p>
+            <div class="lab-stats">
+                <span><i class="fas fa-bomb"></i> 3 Exploit Variants</span>
+                <span><i class="fas fa-lock"></i> Bypassed DEP</span>
+            </div>
+            <div class="lab-links">
+                <a href="#" class="btn"><i class="fas fa-scroll"></i> Writeup</a>
+                <a href="#" class="btn"><i class="fas fa-video"></i> Demo</a>
+            </div>
         </div>
 
         <div class="lab">
-            <h3>Web Application Penetration Test</h3>
-            <p class="lab-date">February 2023</p>
-            <p>Comprehensive penetration test of a vulnerable web application identifying SQLi, XSS, and CSRF vulnerabilities.</p>
-            <p><strong>Tools:</strong> Burp Suite, OWASP ZAP, SQLmap</p>
-            <a href="#" class="btn">View Report</a>
-        </div>
-
-        <div class="lab">
-            <h3>Active Directory Attack Simulation</h3>
-            <p class="lab-date">December 2022</p>
-            <p>Simulation of common Active Directory attack vectors including Kerberoasting and Pass-the-Hash.</p>
-            <p><strong>Tools:</strong> Mimikatz, Impacket, BloodHound</p>
-            <a href="#" class="btn">View Methodology</a>
+            <div class="lab-header">
+                <h3>AD_PRIVESC_CHAIN</h3>
+                <span class="lab-badge">Windows</span>
+                <span class="lab-badge">Kerberos</span>
+            </div>
+            <p class="lab-date">2023-Q1</p>
+            <p>> Domain compromise via Kerberoasting → Pass-the-Ticket → DCSync attack chain.</p>
+            <div class="lab-stats">
+                <span><i class="fas fa-user-secret"></i> Domain Admin</span>
+                <span><i class="fas fa-stopwatch"></i> 23m compromise</span>
+            </div>
+            <div class="lab-links">
+                <a href="#" class="btn"><i class="fas fa-file-pdf"></i> PDF</a>
+                <a href="#" class="fas fa-download btn"></i> Lab Files</a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2023 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
+    <script>
+        // Matrix animation (same as index.html)
+    </script>
 </body>
 </html>
